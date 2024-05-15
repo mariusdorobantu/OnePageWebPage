@@ -1,0 +1,107 @@
+/* General*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #374a69 ;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.1rem;
+    letter-spacing: .05em;
+}
+
+
+/* Nav-bar*/
+
+.nav--el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em 0 0;
+    box-shadow: 1px -10px 25px -8px #0097f5;
+    position: sticky;
+    z-index: 1;
+}
+
+.logo--nav {
+    width: 75px;
+}
+
+.btn--nav {
+    height: 100%;
+    padding: 5px 20px; 
+    background: #0097f5;
+    border: none;
+    border-radius: .2em;
+    color: #ffff;
+    transition-duration: 750ms;
+}
+
+.btn--nav:hover {
+    background-color: #5AB2FF;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.btn--nav:active {
+    transform: translatey(4px);
+}
+
+a {
+    text-decoration: none;
+    margin-right: 2.5em;
+}
+
+a:hover {
+    font-weight: 700;
+    border-bottom: 1px solid #374a69 ;
+}
+
+a:focus {
+    cursor: grabbing;
+}
+
+/* About me section */
+
+.about--me {
+    display: flex;
+    height: 500px;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center; 
+}
+
+text--about--me {
+    color: red;
+}
+
+
+.img--container--about--me {
+    display: flex;
+    width: auto;
+    height: 400px;
+    
+}
+
+.code--img--about--me,
+.office--img--about--me {
+    display: flex;
+    height: 350px;
+    width: 450px;
+    border-radius: .5em;;
+}
+
+.code--img--about--me {
+    position:relative;
+    left: 20%;
+    top: 35%; 
+}
+
+.office--img--about--me {
+    position:relative;
+}
+
+.text--about--me {
+    font-size: 2rem;
+    /* font-weight: 900; */
+    width: 700px;
+}
