@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 /* General*/
 * {
     box-sizing: border-box;
@@ -8,22 +12,31 @@
     letter-spacing: .05em;
 }
 
-
 /* Nav-bar*/
+.nav--bar--el {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    padding: .7em;
+}
 
 .nav--el {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 0 1em 0 0;
-    box-shadow: 1px -10px 25px -8px #0097f5;
-    position: sticky;
-    z-index: 1;
 }
 
 .logo--nav {
-    width: 75px;
+    width: 200px;
+    height: auto;
+    margin-left: .5em;
+}
+
+.nav--bar--el.scrolled {
+    box-shadow: 1px -10px 25px -8px #0097f5;
+    background: #ffffff;
 }
 
 .btn--nav {
@@ -46,17 +59,17 @@
     transform: translatey(4px);
 }
 
-a {
+.nav--anchors {
     text-decoration: none;
     margin-right: 2.5em;
 }
 
-a:hover {
+.nav--anchors:hover {
     font-weight: 700;
     border-bottom: 1px solid #374a69 ;
 }
 
-a:focus {
+nav--anchors:focus {
     cursor: grabbing;
 }
 
@@ -64,22 +77,18 @@ a:focus {
 
 .about--me {
     display: flex;
-    height: 500px;
-    margin-top: 150px;
+    height: 40%;
+    min-height: 500px;
+    margin-top: 250px;
     justify-content: center;
     align-items: center; 
 }
 
-text--about--me {
-    color: red;
-}
-
-
 .img--container--about--me {
     display: flex;
     width: auto;
-    height: 400px;
-    
+    height: 400px;  
+    margin-bottom: 80px;  
 }
 
 .code--img--about--me,
@@ -101,7 +110,176 @@ text--about--me {
 }
 
 .text--about--me {
-    font-size: 2rem;
-    /* font-weight: 900; */
-    width: 700px;
+    font-size: 2.2rem;
+    width: 10.5em;
+    line-height: 1.5em;
+    text-align: center;
 }
+
+.codding--paragraph {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.coding--text { 
+    border-radius: 1em;
+}
+
+.span--coding--journey {
+    z-index: 0; 
+    position: relative;
+}
+
+.span--coding--journey:before {
+    position: absolute;
+    content: '';
+    height: .2em;
+    width: 80%;
+    bottom: .15em;
+    z-index: -1;
+    background: #0097f5; 
+    right: .6em;
+}
+
+.carouse--container {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+/* The my Projects section */
+
+.left--content--first--project {
+    margin-right: 5em;
+}
+
+.first--project,
+.second--project {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.html--content,
+.css--content,
+.js--content {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 50px;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.ss--project {
+    width: 700px;
+    margin-top: 60px;
+}
+
+.programming--header,
+.programming--project {
+    display: flex;
+    align-items: center; 
+    height: 30px;
+    background: #C7C8CC;
+    width: 100%;
+    padding: .5em;
+} 
+
+.programming--dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.orange--dot {
+    background: #DD5746;
+}
+
+.yellow--dot {
+    background: #FEB941;
+}
+
+.green--dot {
+    background: #41B06E;
+}
+
+.programming--title {
+    margin-left: 10px;
+    font-weight: 100;
+    letter-spacing: .2em;
+    font-size: .8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    background-color: #ffffff;
+    padding: 0em 0.5em;
+    border-radius: 1em;
+}
+
+video {
+    border-radius: .5em;
+}
+
+.span--coding--projects {
+    z-index: 0; 
+    position: relative;
+}
+
+.span--coding--projects:before {
+    position: absolute;
+    content: '';
+    height: .2em;
+    width: 80%;
+    bottom: .15em;
+    z-index: -1;
+    background: #0097f5; 
+    right: .95em;
+}
+
+.projects--description {
+    margin-top: 20px;
+    background: #f7fcff;
+    height: 250px;
+    padding: 1em;
+    border-radius: .5em;
+    box-sizing: border-box;
+}
+
+.git--btn {
+    padding: .3em .9em;
+    background: #5AB2FF;
+    border-radius: .2em;
+    color: #ffffff;
+    align-self: flex-start
+}
+
+.projects--description {
+    display: flex;
+    flex-direction: column;
+}
+
+.text--projects--description {
+    margin-bottom: auto;
+}
+
+.language-javascript {
+    height: 400px;
+    font-size: 1rem;
+}
+
+
+pre[class*="language-javascript"] {
+    margin: 0 !important;
+
+}
+
+.projects--header--logo {
+    width: 15px;
+    height: auto;
+    border-radius: .1em;
+    margin-right: .2em;
+}
+

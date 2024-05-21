@@ -33,7 +33,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="main--div--projects">
+        <div id="main--div--projects">
             <div className="first--project">
                 <div className="left--content--first--project">
                     <p className="mb-4 codding--paragraph">
@@ -45,7 +45,7 @@ export default function Projects() {
                             <div className="programming--dot yellow--dot"></div>
                             <div className="programming--dot green--dot"></div>
                             <p className="programming--title">
-                                Personal--Projects/ components/ 
+                                Personal--Projects/ Hacker News Clone/ 
                                 <img className="projects--header--logo" src={JavaScriptLogo} alt="JavaScript Logo" /> store.js
                             </p>
                         </div>
@@ -56,7 +56,55 @@ export default function Projects() {
                             <div className="programming--dot orange--dot"></div>
                             <div className="programming--dot yellow--dot"></div>
                             <div className="programming--dot green--dot"></div>
-                            <p className="programming--title">Personal--Projects/ components/ 
+                            <p className="programming--title">Personal--Projects/ Hacker News Clone/ 
+                                <img className="projects--header--logo" src={cssLogo} alt="Css Logo" />style.css</p>
+                        </div>
+                        <Codeblock code={cssCodeHackerNews} />
+                    </div>
+                </div>
+                <div className="right--content--first--project">
+                    <div className="ss--project">
+                        <div className="video--project">
+                            <video width="1200" controls>
+                                <source src={video} type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div className="projects--description">
+                        <div className="text--projects--description">
+                            <p className="">Hacker News Clone</p>
+                        </div>
+                        <a href="https://github.com/mariusdorobantu/HackerNewsClone" 
+                           className="git--btn" 
+                           target="_blank">see it on Git .
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="second--project">
+                <div className="left--content--first--project">
+                    <p className="mb-4 codding--paragraph">
+                        <span className="codding--paragraph span--coding--projects">snippet</span> of my latest Projects
+                    </p>
+                    <div className="js--content">
+                        <div className="programming--header">
+                            <div className="programming--dot orange--dot"></div>
+                            <div className="programming--dot yellow--dot"></div>
+                            <div className="programming--dot green--dot"></div>
+                            <p className="programming--title">
+                                Personal--Projects/ Hacker News Clone/ 
+                                <img className="projects--header--logo" src={JavaScriptLogo} alt="JavaScript Logo" /> store.js
+                            </p>
+                        </div>
+                        <Codeblock code={jsCodeHackerNews} />
+                    </div>
+                    <div className="js--content">
+                        <div className="programming--header">
+                            <div className="programming--dot orange--dot"></div>
+                            <div className="programming--dot yellow--dot"></div>
+                            <div className="programming--dot green--dot"></div>
+                            <p className="programming--title">Personal--Projects/ Hacker News Clone/ 
                                 <img className="projects--header--logo" src={cssLogo} alt="Css Logo" />style.css</p>
                         </div>
                         <Codeblock code={cssCodeHackerNews} />
@@ -72,10 +120,14 @@ export default function Projects() {
                     </div>
                     <div className="projects--description">
                         <p className="text--projects--description">dadasds</p>
-                        <a href="#" className="git--btn">see it on Git .</a>
+                        <a href="https://github.com/mariusdorobantu/HackerNewsClone" 
+                           className="git--btn" 
+                           target="_blank">see it on Git .
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

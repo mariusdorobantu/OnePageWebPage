@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '../components/ui/carousel.tsx';
 import { Card, CardContent } from '../components/ui/card.tsx';
-import code from '../images/code.jpg';
-import office from '../images/office.jpg';
 import meHiking from '../images/me-hiking.jpg';
 import myDesk from '../images/myOffice.jpg';
 import study from '../images/study.jpg';
@@ -34,17 +32,16 @@ export default function Coding() {
   }, [api]);
 
   return (
-    <div className="p-24 mt-[180px] flex justify-center items-center h-full">
+    <div id="codding--journey--section" className="p-24 mt-[180px] flex justify-center items-center h-full">
       <div>
         <p className="mb-4 codding--paragraph"><span  className="codding--paragraph span--coding--journey">how</span> I begun coding</p>
-        <div className="w-[700px] bg-[#f7fcff] p-12 h-[400px] coding--text">
-          <span>{imageDescriptions[currentSlide - 1]}</span>
-          
+        <div className="w-[700px] bg-[#f7fcff] p-12 h-[400px] coding--text flex items-center">
+          <span className="pl-4 border-l-4 border-[#5AB2FF] leading-8 tracking-wider" >{imageDescriptions[currentSlide - 1]}</span>
         </div>
       </div>
-      <div className="flex flex-col items-center border-none">
-        <Carousel setApi={setApi} className="carouse--container ml-40 w-[650px] border-none flex items-center h-[650px] bg-black">
-          <CarouselContent>
+      <div className="flex flex-col items-center">
+        <Carousel setApi={setApi} className="carouse--container ml-40 w-[800px] flex items-center h-[550px]">
+          <CarouselContent >
             {[
               { image: meHiking, alt: "Img with me, on hiking, from the back, in nature" },
               { image: myDesk, alt: "Image 1" },
@@ -52,17 +49,16 @@ export default function Coding() {
             ].map((item, index) => (
               <CarouselItem key={index}>
                 <Card>
-                  <CardContent className="flex border-none aspect-square items-center justify-center p-0 m-0">
+                  <CardContent className="flex border-none aspect-square items-center justify-center p-0 m-0 ">
                     {/* Use the imported image */}
-                    <img src={item.image} alt={item.alt} className="" />
+                    <img src={item.image} alt={item.alt} className="rounded-md w-full h-[650px] w-[700px]" />
                   </CardContent>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
+          {/* <p>Swipe</p> */}
       </div>
     </div>
   );

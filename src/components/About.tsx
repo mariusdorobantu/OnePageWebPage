@@ -1,10 +1,9 @@
 import '../App.css';
-import code from '../images/code.jpg'
-import office from '../images/office.jpg'
+import code from '../images/code.jpg';
+import office from '../images/office.jpg';
 
 export default function About() {
     return (
-        <>
         <div>
             <div className="about--me">
                     <p className="text--about--me">Simple can be harder than complex,you have to work hard to get your thinking clean to make it simple ⚈</p>
@@ -18,6 +17,5 @@ export default function About() {
                     </div>
             </div>
         </div>
-        </>
     )
 }
