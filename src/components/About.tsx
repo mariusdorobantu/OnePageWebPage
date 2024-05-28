@@ -4,7 +4,7 @@ import office from '../images/office.jpg';
 
 export default function About() {
     return (
-        <div>
+        <div className="about--me--main--container">
             <div className="about--me">
                     <p className="text--about--me">Simple can be harder than complex,you have to work hard to get your thinking clean to make it simple ⚈</p>
                     <div className="img--container--about--me">

@@ -18,23 +18,25 @@ export default function NavBar() {
   }, []);
 
     return (
-      <div id="nav--bar--el">
-          <header className={`nav--bar--el ${scrolled ? 'scrolled' : ''}`}>
-              <div className="nav--el">
-                  <img className="logo--nav"
-                          src={logo} 
-                          alt="Logo DMI" 
-                  />
-                  <div className="menu--nav">
-                      <a href="#nav--bar--el" className="nav--anchors">hero Section.</a>
-                      <a href="#codding--journey--section" className="nav--anchors">coding Journey.</a>
-                      <a href="#main--div--projects" className="nav--anchors">my Projects.</a>
-                      <a href="#" className="nav--anchors">resume.</a>
-                      <a href="#" className="nav--anchors">books to Inspire.</a>
-                  </div>
-                  <button className="btn--nav">find Me.</button>
-              </div>
-          </header>
-      </div> 
+        <div id="nav--bar--el">
+            <header className={`nav--bar--el ${scrolled ? 'scrolled' : ''}`}>
+                <div className="nav--el">
+                    <a href="#nav--bar--el">
+                        <img className="logo--nav"
+                                src={logo} 
+                                alt="Logo DMI" 
+                        />
+                    </a>
+                    <div className="menu--nav">
+                        <a href="#nav--bar--el" className="nav--anchors">hero Section.</a>
+                        <a href="#codding--journey--section" className="nav--anchors">coding Journey.</a>
+                        <a href="#main--div--projects" className="nav--anchors">my Projects.</a>
+                        <a href="#resume--wrapper" className="nav--anchors">resume.</a>
+                        <a href="#books--wrapper" className="nav--anchors">books to Inspire.</a>
+                    </div>
+                    <button className="bnt--blue--standard">text Me.</button>
+                </div>
+            </header>
+        </div> 
   )
 }

@@ -1,3 +1,42 @@
+import CssLogo from '../../images/css.png';
+import JsLogo from '../../images/javascript.png';
+import HackerNewsRecorder from '../../movies/Recording 2024-05-17 141034.mp4';
+
+interface Project {
+    JsTitle: string
+    CssTitle: string
+    CssLogo: string
+    JsLogo: string
+    Video: string
+    ProjectDescriptionTitle: string
+    ProjectDescriptionContent: string
+    ProjectUrl: string
+}
+
+export const projects: Project[] = [
+    {
+        JsTitle: 'Personal--Projects/ Hacker News Clone/ ',
+        CssTitle: 'Personal--Projects/ Hacker News Clone/ ',
+        CssLogo: CssLogo,
+        JsLogo: JsLogo,
+        Video: HackerNewsRecorder,
+        ProjectDescriptionTitle: 'Hacker News Clone',
+        ProjectDescriptionContent: 'Bla bla bla uri',
+        ProjectUrl: 'https://github.com/mariusdorobantu/HackerNewsClone'
+    },
+    {
+        JsTitle: 'Personal--Projects/ Hacker News Clone/ ',
+        CssTitle: 'Personal--Projects/ Hacker News Clone/ ',
+        CssLogo: CssLogo,
+        JsLogo: JsLogo,
+        Video: HackerNewsRecorder,
+        ProjectDescriptionTitle: 'Hacker News Clone',
+        ProjectDescriptionContent: 'Bla bla bla uri',
+        ProjectUrl: 'https://github.com/mariusdorobantu/HackerNewsClone'
+    }
+];
+
+
 export const jsCodeHackerNews = `function createStore(reducer) {
     let currentState = reducer(undefined, {});
 

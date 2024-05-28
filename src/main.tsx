@@ -5,6 +5,9 @@ import NavBar from './components/Nav.tsx';
 import About from './components/About.tsx';
 import Coding from './components/Coding.tsx';
 import Projects from './components/Projects.tsx';
+import Footer from './components/Footer.tsx';
+import Books from './components/Books.tsx';
+import Resume from './components/Resumee.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -12,5 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <About />
     <Coding />
     <Projects />
+    <Resume />
+    <Books />
+    <Footer />
   </React.StrictMode>,
 )
