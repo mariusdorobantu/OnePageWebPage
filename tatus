@@ -1,0 +1,72 @@
+[33mcommit 8719a8aac3ce4669b318dc5de251280870e4d9d9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Tue May 28 15:53:15 2024 +0300
+
+    - implemented map for the projects & books section
+    - built the resume component with the header
+
+[33mcommit 429688f0d1ee961b03d9f9740b465bc7a81a8473[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Tue May 21 13:47:57 2024 +0300
+
+    package-lock.json
+
+[33mcommit f04d635b89d794c4008bfb66f7310071660ef3ef[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Mon May 20 15:48:56 2024 +0300
+
+    Add prism.css
+
+[33mcommit 4fbd53e6330195c682b193fe5cced7477171c68b[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Thu May 16 15:02:12 2024 +0300
+
+    Add package.lock.json
+
+[33mcommit 8904ede9ec7d97a213f567c79cf814c528615bb2[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Wed May 15 14:33:52 2024 +0300
+
+    .eslintrc.cjs, .gitignore, README.md, index.html, package-lock.json, package.json, src/App.css
+
+[33mcommit 0dfcb458bd9c23f2892f6da219572bca672dddd9[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Mon May 13 09:12:30 2024 +0300
+
+    Initial commit
+[33mcommit 8719a8aac3ce4669b318dc5de251280870e4d9d9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Tue May 28 15:53:15 2024 +0300
+
+    - implemented map for the projects & books section
+    - built the resume component with the header
+
+[33mcommit 429688f0d1ee961b03d9f9740b465bc7a81a8473[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Tue May 21 13:47:57 2024 +0300
+
+    package-lock.json
+
+[33mcommit f04d635b89d794c4008bfb66f7310071660ef3ef[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Mon May 20 15:48:56 2024 +0300
+
+    Add prism.css
+
+[33mcommit 4fbd53e6330195c682b193fe5cced7477171c68b[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Thu May 16 15:02:12 2024 +0300
+
+    Add package.lock.json
+
+[33mcommit 8904ede9ec7d97a213f567c79cf814c528615bb2[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Wed May 15 14:33:52 2024 +0300
+
+    .eslintrc.cjs, .gitignore, README.md, index.html, package-lock.json, package.json, src/App.css
+
+[33mcommit 0dfcb458bd9c23f2892f6da219572bca672dddd9[m
+Author: Dorobantu Marius <dorobantu.marius@yahoo.com>
+Date:   Mon May 13 09:12:30 2024 +0300
+
+    Initial commit
