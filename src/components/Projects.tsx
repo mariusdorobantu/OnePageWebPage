@@ -7,10 +7,6 @@ import 'prismjs/components/prism-markup.js';
 import 'prismjs/components/prism-javascript';
 import { projects, jsCodeHackerNews, cssCodeHackerNews } from './data/Highlights-data';
 
-
-
-
-        
 export default function Projects() {
     class Codeblock extends React.Component {
         componentDidMount() {
@@ -84,7 +80,7 @@ export default function Projects() {
                                 </p>
                             </div>
                             <a href={project.ProjectUrl} 
-                            className="git--btn" 
+                            className="bnt--blue--standard projects--btn" 
                             target="_blank">see it on Git .
                             </a>
                         </div>

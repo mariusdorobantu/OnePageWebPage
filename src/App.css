@@ -32,7 +32,6 @@
     height: auto;
 }
 
-
 .nav--bar--el.scrolled {
     box-shadow: 1px -10px 25px -8px #0097f5;
     background: #ffffff;
@@ -241,6 +240,12 @@ video {
     right: .95em;
 }
 
+.projects--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projects--description {
     margin-top: 20px;
     background: #f7fcff;
@@ -249,15 +254,6 @@ video {
     border-radius: .5em;
     box-sizing: border-box;
 }
-
-/* .git--btn,
-.global--btns {
-    padding: .3em .9em;
-    background: #5AB2FF;
-    border-radius: .2em;
-    color: #ffffff;
-    align-self: flex-start
-} */
 
 .projects--description {
     display: flex;
@@ -276,7 +272,6 @@ video {
 
 pre[class*="language-javascript"] {
     margin: 0 !important;
-
 }
 
 .projects--header--logo {
@@ -285,7 +280,6 @@ pre[class*="language-javascript"] {
     border-radius: .1em;
     margin-right: .2em;
 }
-
 
 /* Footer component */
 
@@ -544,26 +538,19 @@ li:hover {
     padding: 2em;
 }
 
-.resume--myjob,
-.ala {
-    font-size: .8rem;
+#resume--myjob {
+    font-size: 24px;
+    font-weight: bold;
     color: #aaa;
-    position: relative;
-    display: inline-block;
-    transition: color 0.3s ease;
+    transition: transform 0.5s ease-in-out;
 }
-
-.resume--myjob .original-text {
-    display: inline;
+  
+.slide-in {
+    transform: translateY(0); /* Slide in to original position */
 }
-
-.resume--myjob:hover .original-text {
-    display: none;
-}
-
-.resume--myjob:hover::before {
-    content: "Web-designer";
-    color: #aaa;
+  
+.slide-out {
+    transform: translateY(-100%); /* Slide out to the left */
 }
 
 .btn--resume {
@@ -596,7 +583,7 @@ li:hover {
     /* padding: 1em; */
     width: 650px;
     height: 180px;
-    margin-top: 1em;
+    margin-top: 2em;
     /* border: 1px solid red; */
 }
 
@@ -625,4 +612,59 @@ li:hover {
 .resume--experience--head {
     display: flex;
     align-items: center;
+}
+
+.resume--skills {
+    margin-top: 5em;
+}
+
+/* Resume component | Resume skills container */
+
+.resume--skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hard--skills--programming { 
+    /* border: 1px solid red; */
+    max-width: 210px;
+    height: 220px;
+    margin-right: 1em;
+}
+
+.hard--skills--programming:hover {
+    transform: translateY(-10px);
+    transition: all .3s ease-in-out;
+}
+
+.hard--skills--img {
+    width: 210px;
+    height: 160px;
+    border-radius: .5em;
+}
+
+.hard--skills--img:hover {
+    /* box-shadow: 0 12px 17px rgba(0, 0, 0, .12); */
+}
+
+.hard--skills--text {
+    font-size: .8rem;
+    color: #aaa;
+}
+
+.hard--skills--string {
+    font-size: .9rem;
+}
+
+.float--text {
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    margin-top: .5em;
+    margin-left: .5em;
+    border-radius: .5em;
+    padding: 0 .5em;
+    font-size: .8rem;
+    font-weight: 900;
 }
