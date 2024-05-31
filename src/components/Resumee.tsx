@@ -2,11 +2,33 @@ import DecathlonLogo from '../images/dktlogo.jpg';
 import OsfLogo from '../images/osflogo.png';
 import TibazoLogo from '../images/tibazoimg.png';
 import LearningLogo from '../images/studylogowhite.jpg';
-import {skills, Skill} from './data/Resume-data';
+import {skills, Skill, funnies, Funny} from './data/Resume-data';
 import React, {useState, useEffect} from 'react';
 
-export default function Resume() {
+const CountUp = ({ targetNumber, duration }) => {
+    const [count, setCount] = useState(0);
+    
+    useEffect(() => {        
+        const increments = Math.ceil(targetNumber / (duration / 1000));
+        const intervalTime = 100 / increments;
 
+        let currentCount = 0;
+
+        const countInterval = setInterval(() => {
+            if (currentCount >= targetNumber) {
+                clearInterval(countInterval);
+            } else {
+                setCount(currentCount++);
+            }
+        }, intervalTime);
+
+        return () => clearInterval(countInterval);
+    }, []);
+
+    return <div className="funny--skills--header">{count}</div>;
+};
+
+export default function Resume() {
     const textArray = [
         'Frontend Dev.',
         'Web designer',
@@ -131,10 +153,22 @@ export default function Resume() {
                                 </p>
                             </div>
                         ))}
-                        <div className="funny--skills"></div>
                     </div>
+                    <div className="funny--skills">
+                        {funnies.map((fun, index) => (
+                            <div className="resume--funny" key={index}>
+                                <p className="funny--skills--header">
+                                    <CountUp
+                                        targetNumber={fun.Timer} 
+                                        duration={10000}
+                                    />
+                                </p>
+                                <p className="funny--skills--content">{fun.Description}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="resume--studies"></div>
                 </div>
-                <div className="resume--studies"></div>
             </div>
         </div>
     )

@@ -50,15 +50,13 @@ export default function Coding() {
               <CarouselItem key={index}>
                 <Card>
                   <CardContent className="flex border-none aspect-square items-center justify-center p-0 m-0 ">
-                    {/* Use the imported image */}
-                    <img src={item.image} alt={item.alt} className="rounded-md w-full h-[650px] w-[700px]" />
+                    <img src={item.image} alt={item.alt} className="object-cover rounded-md h-[450px] w-[700px]" />
                   </CardContent>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
-          {/* <p>Swipe</p> */}
       </div>
     </div>
   );

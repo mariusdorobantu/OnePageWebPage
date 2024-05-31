@@ -50,3 +50,31 @@ export const skills: Skill[] = [
         TextString: "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     },
 ];
+
+interface Funny {
+    Timer: number
+    Description: string
+}
+
+export const funnies: Funny[] = [
+    {
+        Timer: 601,
+        Description: 'Gaming hours',
+    },
+    {
+        Timer: 2001,
+        Description: 'Book pages read',
+    },
+    {
+        Timer: 1361,
+        Description: 'Hours learning to code',
+    },
+    {
+        Timer: 721,
+        Description: 'Coffees drunk',
+    },
+    {
+        Timer: 121,
+        Description: 'Km run',
+    }
+]
