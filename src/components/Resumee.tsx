@@ -1,52 +1,30 @@
-import DecathlonLogo from '../images/dktlogo.jpg';
-import OsfLogo from '../images/osflogo.png';
-import TibazoLogo from '../images/tibazoimg.png';
-import LearningLogo from '../images/studylogowhite.jpg';
+import DecathlonLogo from '../../public/images/dktlogo.jpg';
+import OsfLogo from '../../public/images/osflogo.png';
+import TibazoLogo from '../../public/images/tibazoimg.png';
+import LearningLogo from '../../public/images/studylogowhite.jpg';
 import {skills, Skill, funnies, Funny} from './data/Resume-data';
 import React, {useState, useEffect} from 'react';
-
-const CountUp = ({ targetNumber, duration }) => {
-    const [count, setCount] = useState(0);
-    
-    useEffect(() => {        
-        const increments = Math.ceil(targetNumber / (duration / 1000));
-        const intervalTime = 100 / increments;
-
-        let currentCount = 0;
-
-        const countInterval = setInterval(() => {
-            if (currentCount >= targetNumber) {
-                clearInterval(countInterval);
-            } else {
-                setCount(currentCount++);
-            }
-        }, intervalTime);
-
-        return () => clearInterval(countInterval);
-    }, []);
-
-    return <div className="funny--skills--header">{count}</div>;
-};
+import CountUp from '../components/Intersection-observer-logic';
 
 export default function Resume() {
     const textArray = [
         'Frontend Dev.',
         'Web designer',
-    ]
+    ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slide, setSlide] = useState(true);
-  
+
     useEffect(() => {
-      const intervalId = setInterval(() => {
-        setSlide(false);
-        setTimeout(() => {
-          setCurrentIndex(prevIndex => (prevIndex + 1) % textArray.length);
-          setSlide(true);
-        }, 500);
-      }, 1500); 
-  
-      return () => clearInterval(intervalId);
+        const intervalId = setInterval(() => {
+            setSlide(false);
+            setTimeout(() => {
+                setCurrentIndex(prevIndex => (prevIndex + 1) % textArray.length);
+                setSlide(true);
+            }, 500);
+        }, 1500);
+
+        return () => clearInterval(intervalId);
     }, []);
 
     return (
@@ -73,7 +51,7 @@ export default function Resume() {
                 <div className="resume--experience">
                     <div className="resume--decathlon--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo"src={TibazoLogo}></img>
+                            <img className="resume--logo" src={TibazoLogo} alt="Tibazo Logo"></img>
                             <p className="resume--experience--header">Tibazo</p>
                         </div>
                         <p className="resume--experience--role">Frontend Developer | September 2023 - Present</p>
@@ -87,7 +65,7 @@ export default function Resume() {
                     </div>
                     <div className="resume--tibazo--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo"src={OsfLogo}></img>
+                            <img className="resume--logo" src={OsfLogo} alt="OSF Logo"></img>
                             <p className="resume--experience--header">OSF Digital</p>
                         </div>
                         <p className="resume--experience--role">Salesforce Commerce Cloud Front-end | June 2023 - August 2023</p>
@@ -101,7 +79,7 @@ export default function Resume() {
                     </div>
                     <div className="resume--osf--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo"src={DecathlonLogo}></img>
+                            <img className="resume--logo" src={DecathlonLogo} alt="Decathlon Logo"></img>
                             <p className="resume--experience--header">Decathlon</p>
                         </div>
                         <p className="resume--experience--role">Store manager | April 2018 - January 2023 | 5 yrs 5 mos |</p>
@@ -115,7 +93,7 @@ export default function Resume() {
                     </div>
                     <div className="resume--osf--experience resume--ex">
                          <div className="resume--experience--head">
-                            <img className="resume--logo"src={LearningLogo}></img>
+                            <img className="resume--logo" src={LearningLogo} alt="Learning Logo"></img>
                             <p className="resume--experience--header">Study period</p>
                         </div>
                         <p className="resume--experience--role">Store manager | January 2023 - September 2023 | 7 mos |</p>
@@ -162,11 +140,13 @@ export default function Resume() {
                                         targetNumber={fun.Timer} 
                                         duration={10000}
                                     />
+
                                 </p>
                                 <p className="funny--skills--content">{fun.Description}</p>
                             </div>
                         ))}
                     </div>
+                    <div className="resume--running--hobbies"></div>
                     <div className="resume--studies"></div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import '../App.css';
-import code from '../images/code.jpg';
-import office from '../images/office.jpg';
+import code from '../../public/images/code.jpg'
+import office from '../../public/images/office.jpg'
 
 export default function About() {
     return (

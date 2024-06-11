@@ -424,11 +424,19 @@ li:hover {
     flex-wrap: wrap;
 }
 
-.books--img {
+.books--cover--img {
     border-top-right-radius: 1.5em;
     width: 130px;
     height: auto;
     margin-bottom: 1em;
+    }
+    
+.scale-effect {
+    transition: transform 0.3s ease
+}
+
+.scale-effect:hover {
+    transform: scale(1.1);
 }
 
 .lorand--img {

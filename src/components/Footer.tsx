@@ -1,10 +1,11 @@
-import logo from '../images/dbtmariusdev.png';
-import linkedin from '../images/linkedin.png';
-import facebook from '../images/facebook.png';
-import gitHub from '../images/github.png';
-import x from '../images/twitter.png';
-import youtube from '../images/youtube.png';
-import yahoo from '../images/yahoo.png';
+
+import logo from '../../public/images/dbtmariusdev.png';
+import linkedin from '../../public/images/linkedin.png';
+import facebook from '../../public/images/facebook.png';
+import gitHub from '../../public/images/github.png';
+import x from '../../public/images/twitter.png';
+import youtube from '../../public/images/youtube.png';
+import yahoo from '../../public/images/yahoo.png';
 
 export default function Footer() {
     return (

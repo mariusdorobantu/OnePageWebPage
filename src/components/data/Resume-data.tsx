@@ -1,9 +1,9 @@
-import ReactLogo from '../../images/reactbiglogo.png';
-import JavaScriptLogo from '../../images/jsssssssssssssssssss.jpg';
-import CsslLogo from '../../images/htmlbiglogo.png';
-import HtmllLogo from '../../images/cssbiglogo.jpg';
-import TypeScriptLogo from '../../images/typescriptbiglogo.png';
-import TailwindLogo from '../../images/tailwindbiglogo.png';
+import ReactLogo from '../../../public/images/reactbiglogo.png'
+import JavaScriptLogo from '../../../public//images/jsssssssssssssssssss.jpg';
+import CsslLogo from '../../../public//images/htmlbiglogo.png';
+import HtmllLogo from '../../../public//images/cssbiglogo.jpg';
+import TypeScriptLogo from '../../../public//images/typescriptbiglogo.png';
+import TailwindLogo from '../../../public//images/tailwindbiglogo.png';
 
 interface Skill {
     ImageUrl: string

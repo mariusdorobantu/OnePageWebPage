@@ -32,7 +32,8 @@ const Books = () => {
             <div className="books--main--container">
                 {books.map(book => (<div key={book.ImageUrl} className="book-1 book--elements">
                     <div className="cover--strings--container">
-                        <img className="books--img"
+                        <img 
+                            className="books--cover--img scale-effect"
                             src={book.ImageUrl} 
                             alt="So good they can't ignore you -- book cover">
                         </img>

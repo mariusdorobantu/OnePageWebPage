@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '../components/ui/carousel.tsx';
 import { Card, CardContent } from '../components/ui/card.tsx';
-import meHiking from '../images/me-hiking.jpg';
-import myDesk from '../images/myOffice.jpg';
-import study from '../images/study.jpg';
+import meHiking from '../../public/images/me-hiking.jpg';
+import myDesk from '../../public/images/myOffice.jpg';
+import study from '../../public/images/study.jpg';
 
 export default function Coding() {
   const [api, setApi] = useState(null);

@@ -1,5 +1,5 @@
-import CssLogo from '../../images/css.png';
-import JsLogo from '../../images/javascript.png';
+import CssLogo from '../../../public/images/css.png';
+import JsLogo from '../../../public/images/javascript.png';
 import HackerNewsRecorder from '../../movies/Recording 2024-05-17 141034.mp4';
 
 interface Project {
