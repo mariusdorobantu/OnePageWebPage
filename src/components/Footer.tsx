@@ -35,24 +35,24 @@ export default function Footer() {
                     <p className="footer--header--text">Follow me on </p>
                     <ul>
                         <li>
-                            <a className="social--media--link logo" 
+                            <a className="social--media--link" 
                                href="https://www.linkedin.com/in/marius-dorobantu-07986a129/" 
                                target="_blank">     
                                <img src={linkedin} 
                                      alt="Linkedin logo" 
-                                     className="footer--social--media--icons">
+                                     className="footer--social--media--icons logo">
                                </img>
                                 Linkedin
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link logo" 
+                            <a className="social--media--link" 
                                href="https://www.facebook.com/marius.massy.1" 
                                target="_blank">
                                <img 
                                     src={facebook} 
                                     alt="Facebook logo" 
-                                    className="footer--social--media--icons">
+                                    className="footer--social--media--icons logo">
                                </img>
                                 Facebook
                             </a>
@@ -69,7 +69,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link logo" 
+                            <a className="social--media--link" 
                                href="#" 
                                target="_blank">
                                <img 
@@ -81,7 +81,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link logo"
+                            <a className="social--media--link"
                                href="https://www.youtube.com/channel/UCt7VjEtgjlQ5JeaSAVBBYcA"
                                target="_blank">
                                <img 
@@ -93,7 +93,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link logo"
+                            <a className="social--media--link"
                                href="mailto:marius.dorobantu@yahoo.com"
                                target="_blank">
                                <img 
