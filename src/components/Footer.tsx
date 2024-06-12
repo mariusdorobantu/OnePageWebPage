@@ -35,7 +35,7 @@ export default function Footer() {
                     <p className="footer--header--text">Follow me on </p>
                     <ul>
                         <li>
-                            <a className="social--media--link" 
+                            <a className="social--media--link logo" 
                                href="https://www.linkedin.com/in/marius-dorobantu-07986a129/" 
                                target="_blank">     
                                <img src={linkedin} 
@@ -46,59 +46,60 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link" 
+                            <a className="social--media--link logo" 
                                href="https://www.facebook.com/marius.massy.1" 
                                target="_blank">
-                               <img src={facebook} 
-                                     alt="Facebook logo" 
-                                     className="footer--social--media--icons">
+                               <img 
+                                    src={facebook} 
+                                    alt="Facebook logo" 
+                                    className="footer--social--media--icons">
                                </img>
                                 Facebook
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link" 
+                            <a className="social--media--link logo" 
                                href="https://github.com/mariusdorobantu" 
                                target="_blank">
                                <img src={gitHub} 
                                      alt="GitHub logo" 
-                                     className="footer--social--media--icons">
+                                     className="footer--social--media--icons logo">
                                </img>
                                 Github
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link" 
+                            <a className="social--media--link logo" 
                                href="#" 
                                target="_blank">
                                <img 
                                     src={x} 
                                     alt="X logo" 
-                                    className="footer--social--media--icons">
+                                    className="footer--social--media--icons logo">
                                </img>
                                 X    
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link"
+                            <a className="social--media--link logo"
                                href="https://www.youtube.com/channel/UCt7VjEtgjlQ5JeaSAVBBYcA"
                                target="_blank">
                                <img 
                                     src={youtube} 
                                     alt="Youtube logo" 
-                                    className="footer--social--media--icons">
+                                    className="footer--social--media--icons logo">
                                </img>
                                Youtube
                             </a>
                         </li>
                         <li>
-                            <a className="social--media--link"
+                            <a className="social--media--link logo"
                                href="mailto:marius.dorobantu@yahoo.com"
                                target="_blank">
                                <img 
                                     src={yahoo} 
                                     alt="Youtube logo" 
-                                    className="footer--social--media--icons">
+                                    className="footer--social--media--icons logo">
                                </img>
                                Yahoo mail
                             </a>

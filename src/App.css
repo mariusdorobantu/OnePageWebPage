@@ -312,6 +312,15 @@ li {
     margin-bottom: .6em;
 }
 
+.logo {
+    transition: 2s;
+}
+
+.logo:hover {
+    transition: opacity .5s ease-in-out;
+    opacity: .6;
+}
+
 .policy--list {
     display: flex;
     list-style-type: circle;
@@ -693,4 +702,11 @@ li:hover {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     padding-top: .5em;
+}
+
+.strava--stats { 
+    padding-top: 2em;
+    height: 200px;
+    width: 500px;
+    margin: 0 auto;
 }

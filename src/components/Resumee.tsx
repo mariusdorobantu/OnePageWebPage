@@ -146,6 +146,12 @@ export default function Resume() {
                             </div>
                         ))}
                     </div>
+                    <iframe 
+                        className="strava--stats"
+                        // height='160' 
+                        // width='500' 
+                        src='https://www.strava.com/athletes/118883110/activity-summary/6c7c342c6d4170c6105f8ccb22fef44a9f8137e4'>                            
+                    </iframe>
                     <div className="resume--running--hobbies"></div>
                     <div className="resume--studies"></div>
                 </div>
