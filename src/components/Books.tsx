@@ -51,13 +51,6 @@ const Books = () => {
                     </div>
                 </div>))}
             </div>
-            <div 
-                className="strava-embed-placeholder" 
-                data-embed-type="activity" 
-                data-embed-id="11335617044" 
-                data-style="standard" 
-                data-from-embed="false">
-            </div>
         </div>
         
     )

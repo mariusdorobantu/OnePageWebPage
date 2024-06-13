@@ -630,6 +630,14 @@ li:hover {
     margin-top: 5em;
 }
 
+.funny--skills {
+    flex-wrap: wrap;
+}
+
+.resume--funny { 
+    margin-bottom: 2em; 
+}
+
 /* Resume component | Resume skills container */
 
 .resume--skills {
@@ -709,4 +717,75 @@ li:hover {
     height: 200px;
     width: 500px;
     margin: 0 auto;
+}
+
+/* Resume component | Studies */
+
+.resume--studies--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume--studies { 
+    padding: 1.5em;
+    display: flex;
+    /* flex-wrap: wrap; */
+    max-width: 490px;
+    min-width: 50%;
+    max-height: 550px;
+    border-right: .1em solid #0097f5;
+    margin-top: 2em;
+}
+
+.resume--studies:nth-child(2n) {
+    border-right: none;
+  }
+
+.resume--studies--logo {
+    width: 60px;
+    height: 60px;
+    margin-right: .7em;
+    object-fit: cover;
+}
+
+.introduction--text,
+.resume--studies--body--text,
+.ul--education {
+    margin-top: 1em;
+}
+
+.resume--studies--body--text {
+    font-size: .9rem;
+}
+
+.introduction--text {
+    display: flex;
+}
+
+.frameworks--logo { 
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;;
+    margin-left: .5em;
+}
+
+.resume--studies--header--title,
+.skills--text { 
+    font-weight: 900;
+}
+    
+.resume--studies--header--subtext {         
+    font-size: .8rem;
+    color: #aaa;
+}
+ 
+.ul--education {  
+    display: flex;
+    padding: 0;
+    margin-right: .5em;
+}
+
+.education--ul { 
+    margin-left: .5em;
 }

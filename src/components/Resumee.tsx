@@ -3,6 +3,7 @@ import OsfLogo from '../../public/images/osflogo.png';
 import TibazoLogo from '../../public/images/tibazoimg.png';
 import LearningLogo from '../../public/images/studylogowhite.jpg';
 import {skills, Skill, funnies, Funny} from './data/Resume-data';
+import { educations } from './data/Resume-education-data';
 import React, {useState, useEffect} from 'react';
 import CountUp from '../components/Intersection-observer-logic';
 
@@ -32,7 +33,9 @@ export default function Resume() {
             <div className="resume--main--container">
                 <div className="resume--profile--img"></div>
                 <div className="resume--header--right--content">
-                    <p id="resume--myjob" className={slide ? 'slide-in' : 'slide-out'}>
+                    <p 
+                        id="resume--myjob" 
+                        className={slide ? 'slide-in' : 'slide-out'}>
                         {textArray[currentIndex]}
                     </p>
                     <p className="resume--header">Dorobantu Marius</p>
@@ -51,7 +54,11 @@ export default function Resume() {
                 <div className="resume--experience">
                     <div className="resume--decathlon--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo" src={TibazoLogo} alt="Tibazo Logo"></img>
+                            <img 
+                                className="resume--logo" 
+                                src={TibazoLogo} 
+                                alt="Tibazo Logo">
+                            </img>
                             <p className="resume--experience--header">Tibazo</p>
                         </div>
                         <p className="resume--experience--role">Frontend Developer | September 2023 - Present</p>
@@ -65,7 +72,11 @@ export default function Resume() {
                     </div>
                     <div className="resume--tibazo--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo" src={OsfLogo} alt="OSF Logo"></img>
+                            <img 
+                                className="resume--logo" 
+                                src={OsfLogo} 
+                                alt="OSF Logo">
+                            </img>
                             <p className="resume--experience--header">OSF Digital</p>
                         </div>
                         <p className="resume--experience--role">Salesforce Commerce Cloud Front-end | June 2023 - August 2023</p>
@@ -79,7 +90,11 @@ export default function Resume() {
                     </div>
                     <div className="resume--osf--experience resume--ex">
                         <div className="resume--experience--head">
-                            <img className="resume--logo" src={DecathlonLogo} alt="Decathlon Logo"></img>
+                            <img 
+                                className="resume--logo" 
+                                src={DecathlonLogo} 
+                                alt="Decathlon Logo">
+                            </img>
                             <p className="resume--experience--header">Decathlon</p>
                         </div>
                         <p className="resume--experience--role">Store manager | April 2018 - January 2023 | 5 yrs 5 mos |</p>
@@ -93,7 +108,11 @@ export default function Resume() {
                     </div>
                     <div className="resume--osf--experience resume--ex">
                          <div className="resume--experience--head">
-                            <img className="resume--logo" src={LearningLogo} alt="Learning Logo"></img>
+                            <img 
+                                className="resume--logo" 
+                                src={LearningLogo} 
+                                alt="Learning Logo">
+                            </img>
                             <p className="resume--experience--header">Study period</p>
                         </div>
                         <p className="resume--experience--role">Store manager | January 2023 - September 2023 | 7 mos |</p>
@@ -146,14 +165,65 @@ export default function Resume() {
                             </div>
                         ))}
                     </div>
-                    <iframe 
-                        className="strava--stats"
-                        // height='160' 
-                        // width='500' 
-                        src='https://www.strava.com/athletes/118883110/activity-summary/6c7c342c6d4170c6105f8ccb22fef44a9f8137e4'>                            
-                    </iframe>
-                    <div className="resume--running--hobbies"></div>
-                    <div className="resume--studies"></div>
+                    <div className="resume--wrapper">
+                        <div className="resume--studies--container">
+                            {educations.map((education, index) => (
+                                    <div className="resume--studies">
+                                            <img 
+                                                src={education.CompanyLogoUrl}
+                                                className="resume--studies--logo"
+                                                alt="">                                    
+                                            </img>
+                                                <div className="resume--studies--header" key={index}>
+                                                        <h4 className="resume--studies--header--title">{education.HeaderText}</h4>
+                                                        <p className="resume--studies--header--text">{education.HeaderParagraph}</p>
+                                                        <p className="resume--studies--header--subtext">{education.HeaderSubtext}</p>
+                                                        <p className="introduction--text">
+                                                            {education.BodyBasicText}
+                                                            {education.CssLogoUrl && <img src={education.CssLogoUrl} className="frameworks--logo" alt="CSS Logo" />}
+                                                            {education.HtmlLogoUrl && <img src={education.HtmlLogoUrl} className="frameworks--logo" alt="HTML Logo" />}
+                                                            {education.MySqlLogoUrl && <img src={education.MySqlLogoUrl} className="frameworks--logo" alt="MySQL Logo" />}
+                                                            {education.JavaScriptLogoUrl && <img src={education.JavaScriptLogoUrl} className="frameworks--logo" alt="JS Logo" />}
+                                                            {education.ReactLogoUrl && <img src={education.ReactLogoUrl} className="frameworks--logo" alt="JS Logo" />}
+                                                        </p>
+                                                        <p className="introduction--text">
+                                                            {education.BodyIntermediateText}
+                                                            {education.IntermediateHtmlLogoUrl && <img src={education.IntermediateHtmlLogoUrl} className="frameworks--logo" alt="CSS Logo" />}
+                                                            {education.IntermediateCSSLogoUrl && <img src={education.IntermediateCSSLogoUrl} className="frameworks--logo" alt="HTML Logo" />}
+                                                            {education.IntermediateJavaScriptUrl && <img src={education.IntermediateJavaScriptUrl} className="frameworks--logo" alt="HTML Logo" />}
+                                                            {education.IntermediateReactUrl && <img src={education.IntermediateReactUrl} className="frameworks--logo" alt="JS Logo" />}
+                                                        </p>
+                                                        
+                                                        <p className="resume--studies--body--text">
+                                                        {education.BodyMainText}
+                                                        </p>
+                                                        <ul className="ul--education">
+                                                            <p className="skills--text">Skills:</p> 
+                                                            <li 
+                                                                className="education--ul">
+                                                                    {education.Skill1 && ` • ${education.Skill1}`}
+                                                                    {education.Skill2 && ` • ${education.Skill2}`}
+                                                                    {education.Skill3 && ` • ${education.Skill3}`}
+                                                                    {education.Skill4 && ` • ${education.Skill4}`}
+                                                                    {education.Skill5 && ` • ${education.Skill5}`}
+                                                                    {education.Skill6 && ` • ${education.Skill6}`}
+                                                                    {education.Skill7 && ` • ${education.Skill7}`}
+                                                                    {education.Skill8 && ` • ${education.Skill8}`}
+                                                                    {education.Skill9 && ` • ${education.Skill9}`}
+                                                                    {education.Skill10 && ` • ${education.Skill10}`}
+                                                                    {education.Skill11 && ` • ${education.Skill11}`}
+                                                                    {education.Skill12 && ` • ${education.Skill12}`}
+                                                                    {education.Skill13 && ` • ${education.Skill13}`}
+                                                                    {education.Skill14 && ` • ${education.Skill14}`}
+                                                                    {education.Skill15 && ` • ${education.Skill15}`}
+                                                            </li>
+                                                        </ul>
+                                                        {/* <div>SS / Video / etc. </div> */}
+                            </div>
+                                        </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
